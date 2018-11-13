@@ -9,10 +9,10 @@ Deep convolutional models
 	FC layers in the last few layers
 
 3. In order to be able to build very deep networks, we usually only use pooling layers to downsize the height/width of the activation volumes while convolutions are used with “valid” padding. Otherwise, we would downsize the input of the model too quickly.
-	True
+	False
 
 4. Training a deeper network (for example, adding additional layers to the network) allows the network to fit more complex functions and thus almost always results in lower training error. For this question, assume we’re referring to “plain” networks.
-	True
+	False
 
 5. The following equation captures the computation in a ResNet block. What goes into the two blanks above?
 
