@@ -29,7 +29,7 @@ What are you doing at each time step tt?
 
 7. Suppose you are training a LSTM. You have a 10000 word vocabulary, and are using an LSTM with 100-dimensional activations a^{<t>}. What is the dimension of Γu at each time step?
 
-	10000
+	100
 
 8. Here’re the update equations for the GRU.
 
@@ -41,7 +41,7 @@ What are you doing at each time step tt?
 
 
 	Γu and 1-Γu
-​	 
+	 
 10. You have a pet dog whose mood is heavily dependent on the current and past few days’ weather. You’ve collected data for the past 365 days on the weather, which you represent as a sequence as x^{<1>}, …, x^{<365>}. You’ve also collected data on your dog’s mood, which you represent as y^{<1>}, …, y^{<365>}. You’d like to build a model to map from x \rightarrow yx→y. Should you use a Unidirectional RNN or Bidirectional RNN for this problem?
 
 	Unidirectional RNN, because the value of y^{<t>} depends only on x^{<1>}, …, x^{<t>}, but not on x^{<t+1>}, …, x^{<365>}
