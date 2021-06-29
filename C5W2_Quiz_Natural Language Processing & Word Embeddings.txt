@@ -25,15 +25,15 @@ Then even if the word “ecstatic” does not appear in your small training set,
 
 5. Let EE be an embedding matrix, and let o1234 be a one-hot vector corresponding to word 1234. Then to get the embedding of word 1234, why don’t we call E∗o1234 in Python?
 
-	It is computationally wasteful.
+	It is computationally wasteful. # Yes, the element-wise multiplication will be extremely inefficient.
 
 6. When learning word embeddings, we create an artificial task of estimating P(target \mid context)P(target∣context). It is okay if we do poorly on this artificial prediction task; the more important by-product of this task is that we learn a useful set of word embeddings.
 
-	False
+	True
 
 7. In the word2vec algorithm, you estimate P(t \mid c)P(t∣c), where tt is the target word and cc is a context word. How are tt and cc chosen from the training set? Pick the best answer.
 
-	cc and tt are chosen to be nearby words.
+	c and t are chosen to be nearby words.
 
 8. Suppose you have a 10000 word vocabulary, and are learning 500-dimensional word embeddings. The word2vec model uses the following softmax function:
 P(t∣c)=eθTtec∑10000t′=1eθTt′ec
